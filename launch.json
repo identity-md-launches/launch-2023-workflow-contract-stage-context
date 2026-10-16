@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "FolirPayments",
+      "constructorArgs": ["$owner"]
+    }
+  ],
+  "notes": "FolirPayments is the FOLIR payment-receipt application for Sepolia. Its constructor assigns control to $owner and starts paused. The owner configures the allowlisted test ERC-20 payment token, test ERC-721 identity NFT, and distinct swarm-funding and treasury recipients before unpausing. Standard payments transfer 0.50 token units to the swarm-funding recipient and 0.25 to the treasury; identity NFT holders pay 0.50 to the swarm-funding recipient with no treasury transfer. Receipts are unique per payer and order ID."
+}
